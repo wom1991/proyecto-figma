@@ -56,7 +56,7 @@ function App() {
   ])
 
   const [equipos, actualizarEquipos] = useState([
-    { id: uuidv4(), titulo: "Programación", colorPrimario: "#57c278", colorSecundario: "#D9F7E9"},
+    { id: uuidv4(), titulo: "Programación", colorPrimario: "#57C278", colorSecundario: "#D9F7E9"},
     { id: uuidv4(), titulo: "Front End", colorPrimario: "#82CFFA", colorSecundario: "#E8F8FF"},
     { id: uuidv4(), titulo: "Data Science", colorPrimario: "#A6D157", colorSecundario: "#F0F8E2"},
     { id: uuidv4(), titulo: "DevOps", colorPrimario: "#E06B69", colorSecundario: "#FDE7E8"},
@@ -111,7 +111,10 @@ function App() {
   return (
     <div>
       <Header />
-      { mostrarFormulario && <Formulario equipos={equipos.map((equipo) => equipo.titulo)} registrarColaborador={registrarColaborador}/> }
+      { mostrarFormulario && 
+      <Formulario equipos={equipos.map((equipo) => equipo.titulo)}
+       registrarColaborador={registrarColaborador}
+       crearEquipo={crearEquipo}/> }
       <MiOrg cambiarMostrar={cambiarMostrar}/>
       
       {
