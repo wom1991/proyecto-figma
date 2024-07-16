@@ -1,0 +1,16 @@
+.boton-enviar {
+    background-color: #6278F7;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 24px 32px;
+    border: none;
+    color: #fff;
+    margin: 32px 0;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    color: #95ffd4;
+}
